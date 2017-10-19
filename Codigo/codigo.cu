@@ -185,7 +185,7 @@ int main()
   double elapsedSequential;
   int Mask_Width =  Mask_size;
   Mat image;
-  image = imread("inputs/img4.jpg",0);   // Lee el archivo, 0 significa que ya existe una imagen cargada en esacala de grises
+  image = imread("inputs/Balon.jpg",0);   // Lee el archivo, 0 significa que ya existe una imagen cargada en esacala de grises
   int op = 3;
   Size s = image.size();
   int Row = s.width;
@@ -219,6 +219,6 @@ int main()
   Mat gray_image;
   gray_image.create(Col,Row,CV_8UC1);
   gray_image.data = imgOut;
-  imwrite("./outputs/1053823121.png",gray_image);
+  imwrite("./outputs/image.png",gray_image);
   return 0;
 }
